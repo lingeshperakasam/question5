@@ -29,5 +29,6 @@ jobs:
         git config --local user.email "tbxbush@gmail.com"
         git config --local user.name "lingeshperakasam"
         git add -f output.png
-        git commit -m "Add generated output file" || exit 0   # This will not fail if there's nothing to commit
+        git commit -m "Add generated output file" || exit 0   
         git push https://$TOKEN@github.com/lingeshperakasam/question1.git main
+        
