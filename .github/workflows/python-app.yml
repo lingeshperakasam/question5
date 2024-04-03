@@ -23,12 +23,9 @@ jobs:
         python Simple_line_plot.py
 
     - name: Commit and push if there's a new output
-      env:
-        TOKEN: ${{ secrets.QS_1 }}
       run: |
         git config --local user.email "tbxbush@gmail.com"
         git config --local user.name "lingeshperakasam"
         git add -f output.png
-        git commit -m "Add generated output file" || exit 0   
-        git push https://$TOKEN@github.com/lingeshperakasam/question1.git main
-        
+        git commit -m "Add generated output file" || exit 0   # This will not fail if there's nothing to commit
+        git push --set-upstream origin main -o "Authorization: Bearer ${{ secrets.QS_1 }}"
