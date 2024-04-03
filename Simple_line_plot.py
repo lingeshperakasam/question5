@@ -13,4 +13,4 @@ plt.ylabel('Y-axis')
 plt.title('Simple Line Plot')
 
 # Display the plot
-plt.savefig('output.png')
+plt.savefig('outputquestion1.png')
