@@ -27,4 +27,4 @@ jobs:
         git config --local user.name "lingeshperakasam"
         git add -f output.png
         git commit -m "Add generated output file" || exit 0   # This will not fail if there's nothing to commit
-        git push --set-upstream origin HEAD:main -o token=${{ secrets.Q1_TOKEN }}
+        git push --set-upstream origin question1 -o "Authorization: Bearer ${{ secrets.Q1_TOKEN }}"
