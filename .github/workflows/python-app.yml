@@ -21,10 +21,12 @@ jobs:
     - name: Run Simple_line_plot.py and generate output
       run: |
         python Simple_line_plot.py
+
     - name: Commit and push if there's a new output
       run: |
         git config --local user.email "tbxbush@gmail.com"
         git config --local user.name "lingeshperakasam"
         git add -f output.png
         git commit -m "Add generated output file" || exit 0   # This will not fail if there's nothing to commit
-        git push --set-upstream origin question1 -o "Authorization: Bearer ${{ secrets.Q1_TOKEN }}"
+        git push --set-upstream origin main -o "Authorization: Bearer ${{ secrets.Q1_TOKEN }}"
+
