@@ -21,11 +21,5 @@ jobs:
     - name: Run Simple_line_plot.py and generate output
       run: |
         python Simple_line_plot.py
-    - name: Commit and push output file
-      run: |
-        git config --global user.name 'lingeshperakasam'
-        git config --global user.email 'tbxbush@gmail.com'
-        git add .
-        git commit -m "Add output file"
-        git push
+
 
