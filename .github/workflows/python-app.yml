@@ -24,7 +24,7 @@ jobs:
 
     - name: Commit and push if there's a new output
       env:
-        TOKEN: ${{ secrets.Q1_TOKEN }}
+        TOKEN: ${{ secrets.QS_1 }}
       run: |
         git config --local user.email "tbxbush@gmail.com"
         git config --local user.name "lingeshperakasam"
