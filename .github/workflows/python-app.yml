@@ -21,5 +21,9 @@ jobs:
     - name: Run Simple_line_plot.py and generate output
       run: |
         python Simple_line_plot.py
-
+    - name: Upload output file as an artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: output-file
+        path: ./output.png 
 
