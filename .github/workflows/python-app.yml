@@ -18,9 +18,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Run scatter_plot.py and generate output
+    - name: Run fruit_barchart and generate output
       run: |
-        python scatter_plot.py
+        python fruit_barchart.py
 
     - name: Commit and push if there's a new output
       run: |
