@@ -18,5 +18,5 @@ plt.title('Scatter Plot')
 plt.grid(True)
 plt.legend()
 
-# Show the plot
-plt.show()
+# Display the plot
+plt.savefig('output.png')
