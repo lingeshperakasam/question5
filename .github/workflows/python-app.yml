@@ -19,9 +19,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run creditcard_bankaccount_issues and generate output
+    - name: Run largest_bank_country and generate output
       run: |
-        phython creditcard_bankaccount_issues.py
+        python largest_bank_country.py
 
     - name: Commit and push if there's a new output
       run: |
