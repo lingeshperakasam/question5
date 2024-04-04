@@ -19,9 +19,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run fruit_barchart and generate output
+    - name: Run creditcard_bankaccount_issues and generate output
       run: |
-        python fruit_barchart.py
+        creditcard_bankaccount_issues.py
 
     - name: Commit and push if there's a new output
       run: |
